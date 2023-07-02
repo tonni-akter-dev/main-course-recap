@@ -55,14 +55,13 @@ console.log(odd_even(5)) */
 
 // ১. একটা ফাংশন লিখবা যেটা ১৩ এর নামতা (multiplication table) আউটপুট হিসেবে দেখাবে।
 
-function multiplication(num) {
+/* function multiplication(num) {
     for (let i = 1; i <= 10; i++) {
         // console.log(i);
         console.log(`${num}* ${i}=${num * i}`)
-
     }
 }
-multiplication(13)
+multiplication(13) */
 
 
 
@@ -116,3 +115,23 @@ const pizza = {
 }
 
 console.log(pizza.toppings[2]); */
+
+
+/* 
+Object.keys/values/entries
+object[property name]
+object.property name
+var propertyName='mouse'
+var propertyValue=object[propertyName]
+*/
+
+//object loops
+/* var person={
+name:"tonni",
+age:23,
+habit:"working",
+hobby:"coding",
+movie:"Terrifier",
+friend:"Maruf is my good friend                                                                                
+}
+ */
