@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/bFJx8Rz/3.jpg",
+    "name": "Mr. Raju",
+    "date": "Mar 14 (4 Days ago)",
+    "title": "How to get your first job as a self-taught programmer",
+    "tag1": "#beginners",
+    "tag2": "#programming",
+    "time": 5
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/x3LDB74/4.jpg",
+    "name": "Mrs. Setara",
+    "date": "Mar 14 (4 Days ago)",
+    "title": "How to get your first job as a self-taught programmer",
+    "tag1": "#beginners",
+    "tag2": "#programming",
+    "time": 12
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/bFJx8Rz/3.jpg",
+    "name": "Mr. Osama",
+    "date": "Mar 14 (4 Days ago)",
+    "title": "How to get your first job as a self-taught programmer",
+    "tag1": "#beginners",
+    "tag2": "#programming",
+    "time": 10
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/x3LDB74/4.jpg",
+    "name": "Mina Mostofa",
+    "date": "Mar 14 (4 Days ago)",
+    "title": "How to get your first job as a self-taught programmer",
+    "tag1": "#beginners",
+    "tag2": "#programming",
+    "time": 8
+  }
+]

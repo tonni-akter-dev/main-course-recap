@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friendly javascript</title>
+  </head>
+  <body>
+    <header>Welcome to my friend website</header>
+    <main>
+      <section class="friends" id="friends">
+        <!-- .friend*5>h3.friend_name{Friend-$}+p>lorem5 -->
+        <div class="friend">
+          <h3 class="friend_name">Friend-1</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="friend">
+          <h3 class="friend_name">Friend-2</h3>
+          <p>Error temporibus impedit optio totam.</p>
+        </div>
+        <div class="friend">
+          <h3 class="friend_name" id="friend_3">Friend-3</h3>
+          <p>Similique nemo voluptatem impedit ipsam.</p>
+        </div>
+        <div class="friend">
+          <h3 class="friend_name">Friend-4</h3>
+          <p>Aperiam culpa aliquid porro delectus?</p>
+        </div>
+        <div class="friend">
+          <h3 class="friend_name">Friend-5</h3>
+          <p>Unde aliquam harum aut temporibus.</p>
+        </div>
+      </section>
+      <div class="operations">
+        <button id="apply_bg">Apply Background</button>
+        <button id="center">Center the 3rd</button>
+        <button id="add_friend">Add new friend</button>
+      </div>
+    </main>
+
+    <script>
+      document
+        .getElementById("apply_bg")
+        .addEventListener("click", function () {
+          const friends = document.getElementsByClassName("friend");
+          for (const friend of friends) {
+            // console.log(friend);
+            friend.style.backgroundColor = "lightblue";
+          }
+        });
+      document.getElementById("center").addEventListener("click", function () {
+        const friends = document.getElementById("friend_3");
+        friends.style.textAlign = "center";
+      });
+      document
+        .getElementById("add_friend")
+        .addEventListener("click", function () {
+          const friendContainer = document.getElementById("friends");
+          const friend = document.createElement("div");
+          friend.classList.add("friend");
+          friend.innerHTML = `
+        <h3 class="friend_name">New Friends</h3>
+        <p>Something new added</p>
+          `;
+          friendContainer.appendChild(friend);
+        });
+    </script>
+  </body>
+</html>

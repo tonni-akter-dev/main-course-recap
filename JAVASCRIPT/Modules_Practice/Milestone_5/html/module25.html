@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour of Dom</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      ul {
+        border: 2px solid tomato;
+      }
+      body {
+        border: 2px solid green;
+      }
+      section {
+        border: 2px solid blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- module-25 -->
+    <h1>Dom Special Events module-25</h1>
+    <!-- <button onclick="console.log(7);">Click me</button> -->
+    <!-- <button onclick="console.log('i m clicked');">String Click</button> -->
+    <!-- //v-2 -->
+    <!-- way-1 -->
+    <!-- <button onclick="document.body.style.backgroundColor='yellow'">
+      Click me
+    </button> -->
+    <!-- way-2 -->
+    <!--     <button onclick="make_red()">makered</button>
+    <button id="make_blue">makeBlue</button>
+    <button id="make_purple">makePurple</button>
+    <button id="make_pink">makePink</button>
+    <button id="make_green">makeGreen</button>
+    <button id="make_Orange">makeOrange</button>
+
+    <h1>Video 4</h1>
+    <h3 id="text">Default Text</h3> -->
+    <!-- <button onclick="handleOnclick()">Handle event by add onclick event</button> -->
+    <!-- <button id="event_listener">using addeventlistner</button> <br> -->
+
+    <!-- using input text we want to change the default text -->
+    <!--   <p id="default_text">Default Input Text</p>
+    <input type="text" name="" id="input_field" />
+    <button id="btn_update">update</button>
+
+    <h1>Video 5 comment box</h1>
+    <div id="comment_container">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod delectus
+        sequi quo tenetur rerum exercitationem? Tenetur, eos doloribus porro
+        quam modi laborum quidem distinctio natus voluptatem reiciendis quod quo
+        rerum!
+      </p>
+      <p>
+        Est sit id eius exercitationem consequatur dignissimos suscipit delectus
+        ullam quibusdam, temporibus reiciendis perferendis corrupti officia
+        eligendi minus dolores distinctio qui maiores ab similique hic corporis!
+        Odio error accusamus repudiandae!
+      </p>
+      <p>
+        Similique, error ut commodi, a id voluptate dolor itaque provident
+        cumque deserunt voluptatem ad est ratione, veritatis ducimus
+        voluptatibus qui nobis! Tempore ex saepe reiciendis porro repudiandae
+        nihil delectus a.
+      </p>
+    </div>
+    <form>
+      <textarea name="" id="new_cmnt" cols="60" rows="10"></textarea>
+      <br />
+      <button id="comment_post">Post comment</button>
+    </form> -->
+
+    <!-- Video 6 delete btn like github-->
+    <!--     <h1>Video 6 delete btn like github</h1>
+    <h3 id="secret_info">My Secret info</h3>
+    <input type="text" name="" id="text_field" />
+    <button id="btn_more_events" disabled>Delete</button> -->
+    <!--======================== v-7 event bubbling everything you need to know===================== -->
+
+    <!--     <h1>Explore event bubble</h1>
+    <section id="list-container">
+      <ul id="list_ul">
+        <li id="item-1">Lorem, ipsum.</li>
+        <li id="item-2">Impedit, voluptatum!</li>
+        <li id="item-3">Aliquam, quod?</li>
+        <li id="item-4">Dolorem, dignissimos.</li>
+        <li id="item-5">Recusandae, exercitationem.</li>
+        <li id="item-6">Ducimus, deleniti!</li>
+      </ul>
+    </section> -->
+    <h1>Video-8 event delegation</h1>
+    <section>
+      <ul id="list_container">
+        <li class="item">Lorem, ipsum dolor.</li>
+        <li class="item">Deleniti, eligendi illum?</li>
+        <li class="item">Optio, quam voluptatem.</li>
+        <li class="item">At, esse omnis.</li>
+        <li class="item">Eligendi, ab iste?</li>
+        <li class="item">Hic, quae est!</li>
+      </ul>
+
+      <button id="btn-add-item">Add Item</button>
+    </section>
+
+    <script>
+      /*     const items = document.getElementsByClassName("item");
+      for (const item of items) {
+        item.addEventListener("click", function (e) {
+          //   console.log(e.target.parentNode);
+          event.target.parentNode.removeChild(event.target);
+        });
+      } */
+      document
+        .getElementById("list_container")
+        .addEventListener("click", function (e) {
+          e.target.parentNode.removeChild(e.target);
+        });
+      document
+        .getElementById("btn-add-item")
+        .addEventListener("click", function () {
+          const listContainer = document.getElementById("list_container");
+          const li = document.createElement("li");
+          li.innerText = "Brand new item added";
+          li.classList.add("item");
+          listContainer.appendChild(li);
+        });
+    </script>
+
+    <script src="../module_25.js"></script>
+  </body>
+</html>

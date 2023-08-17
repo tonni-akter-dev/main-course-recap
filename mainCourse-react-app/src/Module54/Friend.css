@@ -1,0 +1,10 @@
+.divFriend{
+    border: 1px solid red;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+div a{
+    margin: 30px;
+}

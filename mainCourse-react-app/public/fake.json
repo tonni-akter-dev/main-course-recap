@@ -1,0 +1,73 @@
+[
+	{
+	  "id": 1,
+	  "name": "Smartphone",
+	  "price": 599.99,
+	  "category": "Electronics",
+	  "brand": "Samsung"
+	},
+	{
+	  "id": 2,
+	  "name": "Laptop",
+	  "price": 1299.99,
+	  "category": "Electronics",
+	  "brand": "Apple"
+	},
+	{
+	  "id": 3,
+	  "name": "Headphones",
+	  "price": 99.95,
+	  "category": "Electronics",
+	  "brand": "Sony"
+	},
+	{
+	  "id": 4,
+	  "name": "Running Shoes",
+	  "price": 79.99,
+	  "category": "Sports",
+	  "brand": "Nike"
+	},
+	{
+	  "id": 5,
+	  "name": "Dress Shirt",
+	  "price": 39.95,
+	  "category": "Fashion",
+	  "brand": "Calvin Klein"
+	},
+	{
+	  "id": 6,
+	  "name": "Backpack",
+	  "price": 49.99,
+	  "category": "Accessories",
+	  "brand": "Herschel Supply Co."
+	},
+	{
+	  "id": 7,
+	  "name": "Digital Camera",
+	  "price": 699.00,
+	  "category": "Electronics",
+	  "brand": "Canon"
+	},
+	{
+	  "id": 8,
+	  "name": "Blender",
+	  "price": 79.95,
+	  "category": "Home & Kitchen",
+	  "brand": "KitchenAid"
+	},
+	{
+	  "id": 9,
+	  "name": "Fitness Tracker",
+	  "price": 129.50,
+	  "category": "Sports",
+	  "brand": "Fitbit"
+	},
+	{
+	  "id": 10,
+	  "name": "Smart TV",
+	  "price": 899.00,
+	  "category": "Electronics",
+	  "brand": "LG"
+	}
+  ]
+  
