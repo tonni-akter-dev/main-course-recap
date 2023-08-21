@@ -9,6 +9,7 @@ import Orders from "./Module50/amazon/Orders/Orders.jsx";
 import Inventory from "./Module50/amazon/Inventory/Inventory.jsx";
 import Login from "./Module50/amazon/Login/Login.jsx";
 import cartProductsLoader from "./Module50/Loaders/cartProductsLoader.js";
+import Checkout from "./Module50/amazon/Checkout/Checkout.jsx";
 /* import Home from "./Module54/Home.jsx";
 import First from "./Module54/First.jsx";
 import Friends from "./Module54/Friends.jsx";
@@ -139,6 +140,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
       },
     ],
   },
