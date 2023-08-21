@@ -3,7 +3,13 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Module54/Home.jsx";
+import Shop from "./Module50/amazon/Shop/Shop.jsx";
+import HomeLayout from "./Module50/amazon/HomeLayout/HomeLayout.jsx";
+import Orders from "./Module50/amazon/Orders/Orders.jsx";
+import Inventory from "./Module50/amazon/Inventory/Inventory.jsx";
+import Login from "./Module50/amazon/Login/Login.jsx";
+import cartProductsLoader from "./Module50/Loaders/cartProductsLoader.js";
+/* import Home from "./Module54/Home.jsx";
 import First from "./Module54/First.jsx";
 import Friends from "./Module54/Friends.jsx";
 import FriendDetails from "./Module54/FriendDetails.jsx";
@@ -13,6 +19,7 @@ import MealNavbar from "./Module54-5/MealDb-withReactRouter/MealNavbar.jsx";
 import About from "./Module54-5/MealDb-withReactRouter/About.jsx";
 import Conract from "./Module54-5/MealDb-withReactRouter/Conract.jsx";
 import Meals from "./Module54-5/MealDb-withReactRouter/Meals.jsx";
+import MealDetails from "./Module54-5/MealDb-withReactRouter/MealDetails.jsx"; */
 /* const router = createBrowserRouter([
   {
     path: "/",
@@ -81,7 +88,7 @@ import Meals from "./Module54-5/MealDb-withReactRouter/Meals.jsx";
 ]);
  */
 
-const router = createBrowserRouter([
+/* const router = createBrowserRouter([
   {
     path: "/",
     element: <MealNavbar />,
@@ -98,7 +105,40 @@ const router = createBrowserRouter([
         path: "/meals",
         element: <Meals />,
         loader: () =>
-          fetch("https://www.themealdb.com/api/json/v1/1/categories.php"),
+          fetch("https://www.themealdb.com/api/json/v1/1/search.php?s"),
+      },
+      {
+        path: "/meals/:mealId",
+        element: <MealDetails />,
+        loader: ({ params }) =>
+          fetch(
+            `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.mealId}`
+          ),
+      },
+    ],
+  },
+]); */
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomeLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Shop />,
+      },
+      {
+        path: "/orders",
+        element: <Orders />,
+        loader: cartProductsLoader,
+      },
+      {
+        path: "/inventory",
+        element: <Inventory />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },

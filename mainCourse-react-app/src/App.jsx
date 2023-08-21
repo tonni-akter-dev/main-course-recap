@@ -8,7 +8,7 @@ function App() {
     <>
       {/* <Module50 /> */}
       {/* <Assignment8 /> */}
-      <Recharts/>
+      {/* <Recharts/> */}
       {/* <Phonebar/> */}
     </>
   );

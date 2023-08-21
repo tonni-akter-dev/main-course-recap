@@ -1,14 +1,15 @@
 import React from "react";
 import "./AmazonNav.css";
+import { Link } from "react-router-dom";
 const AmazonNav = () => {
   return (
     <div className="nav_bg">
       <img className="logo" src="/images/Logo.svg" alt="" />
       <div>
-        <a href="/shop">Shop</a>
-        <a href="/order">Order</a>
-        <a href="/inventory">Manage Inventory</a>
-        <a href="/login">Login</a>
+        <Link to="/">Shop</Link>
+        <Link to="/orders">Order</Link>
+        <Link to="/inventory">Manage Inventory</Link>
+        <Link to="/login">Login</Link>
       </div>
     </div>
   );
